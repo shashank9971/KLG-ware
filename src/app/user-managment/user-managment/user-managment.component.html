@@ -1,0 +1,151 @@
+<div class="container-fluid main">
+  <div class="table_section">
+    <div class="col-12 head">
+      <div class="heading">All User </div>
+      <div class="bnt">
+        <button (click)="openModal(createUserModal)">Add New</button>
+      </div>
+    </div>
+    <div class="user_table">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Email ID</th>
+            <th scope="col">Role assigned</th>
+            <th scope="col">Department</th>
+            <th scope="col">Last login</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John doe</td>
+            <td>Johndoe@gmail.com</td>
+            <td>Operator</td>
+            <td>General</td>
+            <td>2 days ago</td>
+            <td>
+              <span>
+                <i class="fa fa-edit"></i>
+              </span>
+              <span>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>Emily doe</td>
+            <td>Emilydoe@gmail.com</td>
+            <td>Team Lead</td>
+            <td>Customer service</td>
+            <td>15 days ago</td>
+            <td>
+              <span>
+                <i class="fa fa-edit"></i>
+              </span>
+              <span>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td>Darren Smith</td>
+            <td>DarrenSmith@gmail.com</td>
+            <td>Manager</td>
+            <td>warehouse</td>
+            <td>2 days 12 hours ago</td>
+            <td>
+              <span>
+                <i class="fa fa-edit"></i>
+              </span>
+              <span>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<!----------------------------------Create User Modal--------------------------->
+<div>
+  <ng-template #createUserModal let-c="close" let-d="dismiss">
+    <form class="custom-form" (ngSubmit)="createUser()" #createUserFrom="ngForm" method="post" name="createUserFrom">
+      <div class="modal-header">
+        <h4 class="modal-title">Add New User</h4>
+        <button type="button" class="close" aria-label="Close" (click)="d('Cross click');" style="outline: none;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="group">
+              <span class="fieldIcon"><img src="../../../assets/images/user.svg" alt=""></span>
+              <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>First Name</label>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="group">
+              <span class="fieldIcon"><img src="../../../assets/images/user.svg" alt=""></span>
+              <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Last name</label>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="group">
+              <span class="fieldIcon"><img src="../../../assets/images/emailuser.svg" alt=""></span>
+              <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Email Id</label>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="group">
+              <span class="fieldIcon"><img src="../../../assets/images/assingrole.svg" alt=""></span>
+              <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Assign Role</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <div class="group">
+              <span class="fieldIcon"><img src="../../../assets/images/setting.svg" alt=""></span>
+              <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Department</label>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="group">
+              <span class="fieldIcon"><img src="../../../assets/images/assets.svg" alt=""></span>
+              <input type="text" required>
+              <span class="highlight"></span>
+              <span class="bar"></span>
+              <label>Password</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer bnt">
+        <button type="submit" class="buttonSubmit" [disabled]="!createUserFrom.valid">Save</button>
+        <button type="button" class="buttonSubmit buttonClose" (click)="c('Close click')">Close</button>
+      </div>
+    </form>
+  </ng-template>
+</div>

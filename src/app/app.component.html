@@ -1,0 +1,10 @@
+<app-header *ngIf="isshow"></app-header>
+<app-side-bar *ngIf="isshow"></app-side-bar>
+<div class="divmang" *ngIf="isshow">
+    <router-outlet></router-outlet>
+</div>
+<div *ngIf="!isshow">
+    <app-login></app-login>>
+</div>
+<!-- <app-login></app-login>
+<router-outlet></router-outlet>  -->

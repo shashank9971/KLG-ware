@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="32.501" viewBox="0 0 28 32.501">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <g id="Group_32" data-name="Group 32" transform="translate(0.5 1)">
+    <path id="Union_1" data-name="Union 1" class="cls-1" d="M-3288-2725a2,2,0,0,1-2-2v-17a2,2,0,0,1,2-2h23a2,2,0,0,1,2,2v17a2,2,0,0,1-2,2Zm10.79-15.135v9.6a.965.965,0,0,0,.9,1.019.965.965,0,0,0,.9-1.019v-9.6a.965.965,0,0,0-.9-1.019A.965.965,0,0,0-3277.211-2740.135Zm-7.289-6.366v-7.5a2.5,2.5,0,0,1,2.5-2.5h11a2.5,2.5,0,0,1,2.5,2.5v7.5Z" transform="translate(3290 2756)"/>
+  </g>
+</svg>

@@ -1,0 +1,46 @@
+.main_header{
+    .navbar.navbar-light.bg-light{
+        padding-left: 16%;
+        background: linear-gradient(to right, #0b4ba6 0%, #138fcd 100%);
+        .form-inline{
+            input{
+                background: linear-gradient(to right, #255cb3 0%, #2a6fbe 100%);
+                border: 0;
+                width: 360px;
+                border-radius: 30px;
+                font-size: 12px;
+                padding: 0 25px;
+                color: #fff;
+            }
+        }
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #fff;
+            opacity: 1; /* Firefox */
+          }
+          .nav.navbar-nav.navbar-right{
+            max-width: 50%;
+            flex-direction: inherit;
+            li{
+                padding: 7px 0px;
+            }
+              a{
+                  margin: 10px;
+                  color: #fff
+              }
+          }
+          .avatar {
+            width: 35px;
+            height: 35px;
+            margin: -6px 5px;
+              img{
+                vertical-align: middle;
+                width: 100%;
+                border-radius: 50%;
+              }
+          }
+          .name_tag{
+              font-size: 12px;
+          }
+    }
+    
+}

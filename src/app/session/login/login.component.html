@@ -1,0 +1,48 @@
+<div class="main_Log">
+  <div class="log_sec">
+    <div class="row loginSec">
+      <div class="col-4 textSec">
+        <div class="sub_head"><img alt="logo" src="../../../assets/images/Mask Group 3.png"></div>
+        <div class="wel">
+          <p class="w">Welcome,</p>
+          <p class="t"> to the KLG control tower</p>
+        </div>
+        <div class="sub_foot"><img alt="logo" src="../../../assets/images/kgl.png"></div>
+      </div>
+      <div class="col-8 fromSec">
+        <div class="sub_head">Log into your account</div>
+        <form class="custom-form" (ngSubmit)="submitSignIn(user);signinForm.reset()" #signinForm="ngForm" method="post"
+          name="signinForm">
+          <div class="form-group" ng-class="{'not-empty': userName.length}">
+            <span class="icons"><img src="../../../assets/images/emailicon.svg" alt=""></span>
+            <input tnot ype="text" placeholder="Email or Mobile number" class="form-control" name="email"
+              [(ngModel)]="user.email" #email="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            <!-- <div *ngIf="email.invalid && email.touched" class="alert alert-danger">
+                          <div *ngIf="email.errors.required">Please enter a valid email address</div>
+                          <div *ngIf="email.errors?.pattern && email.touched">Please enter a valid email address</div>
+                        </div> -->
+          </div>
+          <div class="form-group" ng-class="{'not-empty': passWord.length}">
+            <span class="icons"><img src="../../../assets/images/lock.svg" alt=""></span>
+            <input class="form-control" type="password" placeholder="Password" name="password" id="password"
+              [(ngModel)]="user.password" #password="ngModel" validateEqual="confirmPassword" pattern=".{0}|.{8,}"
+              required minlength="8" reverse="true">
+            <!-- <div *ngIf="password.errors && password.touched" class="alert alert-danger">
+                      <div [hidden]="!password.errors.required">Please enter password minimum 8 character</div>
+                      <div *ngIf="password.errors.minlength">Password should be atleast 8 characters long.</div>
+                    </div> -->
+                    <div class="forgot_password">
+                            Forgot password?
+                    </div>
+          </div>
+          <div class="reme">
+                <input type="checkbox" value="lsRememberMe" id="rememberMe" style="display: inline-block;"> <label class="remember_password">Remember password</label>
+          </div>
+          <div class="submit">
+            <button class="btn btn-primary btn-block" [disabled]="!signinForm.valid">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

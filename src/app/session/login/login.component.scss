@@ -1,0 +1,178 @@
+.main_Log {
+  background: url('../../../assets/images/kglBanner.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 100% 100%;
+  height: 100vh;
+  background-size: cover;
+
+  .log_sec {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    width: 55%;
+  }
+
+  .loginSec {
+    background: #ffffff;
+    border-radius: 5px;
+
+    .fromSec {
+      padding: 40px 80px;
+
+      .sub_head {
+        margin: auto;
+        width: 342px;
+        height: 42px;
+        font-family: roboto;
+        font-size: 25px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.17;
+        letter-spacing: -0.86px;
+        text-align: center;
+        color: #000000;
+      }
+
+      .form-group {
+            margin: 35px 0;
+        input {
+          border-radius: 0px;
+          border-bottom: 1px solid #b5b5b5;
+          border-top: 0;
+          border-left: 0;
+          border-right: 0;
+          font-family: roboto;
+          font-size: 14px;
+          padding-bottom: 17px;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.19;
+          letter-spacing: normal;
+          text-align: left;
+          color: #000000;
+          padding-left: 40px;
+          box-shadow: none;
+
+        }
+
+        .icons {
+          position: absolute;
+          width: 18px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      ::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #000;
+        opacity: 1;
+        /* Firefox */
+      }
+
+      .submit {
+        button {
+          height: 40px;
+          border-radius: 5px;
+          box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+          background-image: linear-gradient(104deg, #003fa6 4%, #1cb5e0 112%);
+        }
+      }
+      .forgot_password {
+        font-family: roboto;
+        font-size: 13px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.16;
+        letter-spacing: normal;
+        text-align: left;
+        color: #707070;
+        text-decoration: underline;
+        text-align: right;
+        margin: 7px 0;
+      }
+      .reme{
+        margin-bottom: 20px;
+        margin-top: 22px;
+        .remember_password {
+            font-family: roboto;
+            font-size: 14px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.19;
+            letter-spacing: normal;
+            text-align: left;
+            color: #000000;
+            opacity: 1;
+            position: absolute;
+            padding: 3px 15px;
+          }
+      }
+      input[type="checkbox"] {
+        -webkit-appearance: checkbox;
+        -moz-appearance: checkbox;
+        appearance: checkbox;
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .textSec {
+      background-image: linear-gradient(163deg, #003fa6 8%, #1cb5e0 138%);
+      padding: 35px 14px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+
+      .sub_head {
+        img {
+          width: 100%;
+          height: 28px;
+          object-fit: contain;
+        }
+      }
+
+      .wel {
+        margin: 65px 0px;
+
+        .t {
+          font-size: 27px;
+          font-family: roboto;
+          line-height: 1.7;
+          font-weight: 400;
+        }
+
+        p {
+          width: 100%;
+          font-family: roboto;
+          font-size: 40px;
+          font-weight: 500;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.10;
+          letter-spacing: normal;
+          text-align: left;
+          color: #ffffff;
+          font-size: 42px;
+        }
+      }
+
+      .sub_foot {
+        img {
+          width: 100%;
+          height: 58px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}

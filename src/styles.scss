@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+@import "~@fortawesome/fontawesome-free/scss/brands.scss";
+
+.btn-primary:disabled{
+    cursor: not-allowed;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #0b4ba6 0%, #138fcd 100%); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:linear-gradient(to right, #0b4ba6 0%, #138fcd 100%);; 
+  }
+  .modal-user{
+    transform: translate(0%, 20%);
+    .modal-header{
+      padding: 10px 15px;
+      .modal-title{
+        font-size: 13px;
+        font-family: Roboto;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+        margin-top: 5px;
+      }
+    }
+  }
+  .custom-control-input:checked~.custom-control-label::before {
+    color: #fff!important;
+    border-color: #179fd5!important;
+    background-color: #179fd5!important;
+    width: 35px;
+}
+.custom-switch .custom-control-label::after {
+  top: calc(.25rem + 2px);
+  left: calc(-28px + 2px);
+}
